@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<!-- Bean declaration for Autowiring By Name Dependency Injection starts 
+		here -->
+
+	<bean id="allotedTo1" class="com.javaLive.byName.Student"
+		autowire="byName">
+		<property name="name" value="Student A" />
+	</bean>
+	<bean id="room1" class="com.javaLive.byName.Room"
+		autowire="byType">
+		<property name="roomNumber" value="R-101" />
+	</bean>
+
+	<!-- Bean declaration for Autowiring By Name Dependency Injection ends here -->
+
+	<!-- Bean declaration for Autowiring By Type Dependency Injection starts 
+		here -->
+
+	<bean id="allotedTo2" class="com.javaLive.byType.Student">
+		<property name="name" value="Student B" />
+	</bean>
+	<bean id="room2" class="com.javaLive.byType.Room"
+		autowire="byType">
+		<property name="roomNumber" value="R-102" />
+	</bean>
+
+	<!-- Bean declaration for Autowiring By Type Dependency Injection ends here -->
+
+	<!-- Bean declaration for Autowiring with Constructor Dependency Injection starts 
+		here -->
+
+	<bean id="allotedTo3" class="com.javaLive.constructorBased.Student">
+		<property name="name" value="Student C" />
+	</bean>
+	<bean id="room3" class="com.javaLive.constructorBased.Room"
+		autowire="constructor">
+		<property name="roomNumber" value="R-103" />
+	</bean>
+
+	<!-- Bean declaration for Autowiring with Constructor Dependency Injection ends here -->
+
+</beans>
