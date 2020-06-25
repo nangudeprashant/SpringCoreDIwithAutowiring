@@ -1,5 +1,4 @@
 package com.javaLive.byName;
-
 public class Student {
 	private String name;
 

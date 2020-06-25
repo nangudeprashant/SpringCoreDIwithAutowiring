@@ -9,7 +9,7 @@ public class MainClass {
 		Room room = (Room) context.getBean("room1");
 		Student student= (Student) context.getBean("allotedTo1");
 		System.out.println(student.toString());
-		System.out.println(room);
+		System.out.println(room.toString());
 		context.registerShutdownHook();
 	}
 }

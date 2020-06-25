@@ -13,7 +13,7 @@ public class Room {
 	public void setRoomNumber(String roomNumber) {
 		this.roomNumber = roomNumber;
 	}
-	@Autowired//Constructor based autowiring.
+//	@Autowired//Constructor based autowiring.
 	public Room(Student allotedTo) {
 		this.allotedTo3 = allotedTo;
 	}

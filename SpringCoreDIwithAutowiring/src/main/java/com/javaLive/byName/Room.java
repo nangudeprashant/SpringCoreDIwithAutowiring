@@ -12,18 +12,18 @@ public class Room {
 		this.roomNumber = roomNumber;
 	}
 
-	public Student getAllotedTo() {
+	public Student getAllotedTo1() {
 		return allotedTo1;
 	}
 
-	public void setAllotedTo(Student allotedTo1) {
+	public void setAllotedTo1(Student allotedTo1) {
 		this.allotedTo1 = allotedTo1;
 	}
 
 	@Override
 	public String toString() {
 		String name = "";
-		if (allotedTo1 != null) {
+		if (this.allotedTo1 != null) {
 			name = allotedTo1.getName();
 		}
 		else{
